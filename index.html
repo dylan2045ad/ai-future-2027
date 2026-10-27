@@ -1,125 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The AI Future of 2027 — Free Audiobook Manuscript</title>
-    <meta name="description" content="The AI Future of 2027: how automation rushes in through bots and voice-enabled AI that replace humans at banks, trading desks, and customer service. Free audiobook manuscript in 15 languages.">
-    <style>
-        :root {
-            --bg: #0a0a1a;
-            --fg: #e8e8e8;
-            --accent: #00ffff;
-            --accent2: #ff00ff;
-            --card: #16213e;
-            --border: #0f3460;
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body {
-            font-family: 'Segoe UI', system-ui, sans-serif;
-            background: var(--bg);
-            color: var(--fg);
-            line-height: 1.6;
-            padding: 2rem 1rem;
-        }
-        .container { max-width: 900px; margin: 0 auto; }
-        header {
-            text-align: center;
-            padding: 3rem 1rem;
-            border-bottom: 2px solid var(--accent);
-            margin-bottom: 2rem;
-        }
-        h1 {
-            font-size: 2.5rem;
-            background: linear-gradient(90deg, var(--accent), var(--accent2));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            margin-bottom: 0.5rem;
-        }
-        .subtitle { color: #aaa; font-size: 1.1rem; }
-        .cover {
-            max-width: 400px;
-            margin: 2rem auto;
-            border: 2px solid var(--accent);
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 0 30px rgba(0,255,255,0.3);
-        }
-        .cover img { width: 100%; display: block; }
-        .lang-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1rem;
-            margin: 2rem 0;
-        }
-        .lang-card {
-            background: var(--card);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1rem;
-            text-align: center;
-            transition: transform 0.2s, border-color 0.2s;
-        }
-        .lang-card:hover {
-            transform: translateY(-4px);
-            border-color: var(--accent);
-        }
-        .lang-card a {
-            color: var(--fg);
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .lang-card a:hover { color: var(--accent); }
-        .lang-code { color: var(--accent); font-size: 0.85rem; }
-        section { margin: 3rem 0; }
-        h2 { color: var(--accent); margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
-        p { margin-bottom: 1rem; }
-        .meta { color: #888; font-size: 0.9rem; }
-        footer { text-align: center; padding: 2rem; color: #666; border-top: 1px solid var(--border); margin-top: 3rem; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The AI Future of 2027 — A One-Hour Science-Fiction Audiobook</title>
+<meta name="description" content="The AI Future of 2027 is a one-hour science-fiction audiobook to listen to: how automation rushes in through bots and voice-enabled AI that replace humans at banks, trading desks, and customer service. Free forever.">
+<style>
+:root{--bg:#040816;--bg2:#071026;--fg:#f2f7ff;--muted:#c7d6ea;--green:#00ff88;--cyan:#22d3ee;--blue:#2f7bff;--card:#0c1730;--border:#1d3a66}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;background:radial-gradient(900px 500px at 85% -5%,rgba(47,123,255,.35),transparent 60%),radial-gradient(800px 500px at 5% 10%,rgba(0,255,136,.22),transparent 60%),linear-gradient(180deg,#040816,#071026 55%,#040816);color:var(--fg);line-height:1.7}
+.container{max-width:1120px;margin:0 auto;padding:2rem 1.25rem 3rem}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center;padding:2.5rem 0 3rem}
+.eyebrow{display:inline-block;font-weight:800;letter-spacing:.14em;font-size:.85rem;color:#04121a;background:linear-gradient(90deg,var(--green),var(--cyan));padding:.45rem .9rem;border-radius:999px}
+h1{font-size:clamp(2.8rem,6vw,4.8rem);line-height:1.02;letter-spacing:-.02em;margin:1.25rem 0 1rem;background:linear-gradient(92deg,#ffffff 10%,var(--green) 45%,var(--cyan) 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{font-size:1.25rem;color:var(--muted);max-width:34rem}
+.meta{color:#9fb4d4;margin-top:1.25rem;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.25rem}
+.chips span{border:1px solid var(--border);background:rgba(12,23,48,.85);padding:.4rem .8rem;border-radius:999px;font-size:.9rem;color:#eaf6ff}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.75rem}
+.btn-primary{background:linear-gradient(90deg,var(--green),var(--cyan));color:#04121a;font-weight:800;text-decoration:none;padding:.9rem 1.4rem;border-radius:12px}
+.btn-secondary{border:1px solid #3a5f8f;color:#fff;text-decoration:none;padding:.9rem 1.4rem;border-radius:12px;font-weight:700}
+.cover-wrap{text-align:center}
+.cover{border-radius:22px;padding:6px;background:linear-gradient(135deg,var(--green),var(--blue),var(--cyan));box-shadow:0 0 0 1px rgba(255,255,255,.12),0 24px 70px rgba(0,255,136,.22),0 24px 70px rgba(47,123,255,.25)}
+.cover img{width:100%;display:block;border-radius:16px;aspect-ratio:4/5;object-fit:cover;background:#040816}
+.cover-caption{color:#9fb4d4;margin-top:.9rem;font-size:.95rem}
+section{margin:3.5rem 0}
+h2{font-size:2rem;line-height:1.2;margin-bottom:1rem}
+h2:after{content:"";display:block;width:72px;height:4px;margin-top:.7rem;border-radius:99px;background:linear-gradient(90deg,var(--green),var(--cyan))}
+.about{background:linear-gradient(180deg,rgba(12,23,48,.9),rgba(12,23,48,.55));border:1px solid var(--border);border-radius:20px;padding:2.25rem}
+.about p{color:#e6eefc;font-size:1.12rem;margin-bottom:1rem;max-width:72ch}
+.about .free{font-size:1.25rem;font-weight:700;color:#ffffff;border-left:4px solid var(--green);padding-left:1rem;margin:1.5rem 0 0}
+.section-intro{color:var(--muted);font-size:1.1rem;max-width:72ch;margin-bottom:1.5rem}
+.lang-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:1rem}
+.lang-card{display:flex;flex-direction:column;align-items:center;text-align:center;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.4rem 1rem;text-decoration:none;color:var(--fg);transition:transform .2s,border-color .2s,box-shadow .2s}
+.lang-card:hover{transform:translateY(-5px);border-color:var(--green);box-shadow:0 14px 34px rgba(0,255,136,.15)}
+.lang-name{font-size:1.2rem;font-weight:800}
+.flag{font-size:2.75rem;line-height:1;margin-top:.65rem}
+.lang-code{color:var(--cyan);font-size:.9rem;margin-top:.55rem}
+footer{text-align:center;padding:2rem 1rem;color:#8fa8c8;border-top:1px solid var(--border);margin-top:3rem}
+@media(max-width:800px){.hero{grid-template-columns:1fr;gap:2rem}.container{padding-top:1rem}}
+</style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>The AI Future of 2027</h1>
-            <p class="subtitle">A Free Audiobook Manuscript</p>
-            <p class="meta">By Dylan (Dylan from 2045) · ~1 hour of audio · 15 languages · Free forever</p>
-        </header>
-
-        <div class="cover">
-            <img src="cover.png" alt="The AI Future of 2027 cover" onerror="this.style.display='none'">
-        </div>
-
-        <section>
-            <h2>About This Book</h2>
-            <p>How automation rushes in quickly through bots and voice-enabled AI assistants that replace humans at banks, trading desks, and in customer service. Nobody sees it coming, and then it sneaks up on everyone.</p>
-            <p>This manuscript is free. Share it. Translate it. Record it. Give it away. The future belongs to everyone.</p>
-        </section>
-
-        <section>
-            <h2>Available Languages</h2>
-            <div class="lang-grid">
-                <div class="lang-card"><a href="manuscript-en.md">English</a><div class="lang-code">en</div></div>
-                <div class="lang-card"><a href="manuscript-ja.md">日本語</a><div class="lang-code">ja</div></div>
-                <div class="lang-card"><a href="manuscript-zh.md">中文 (Mandarin)</a><div class="lang-code">zh</div></div>
-                <div class="lang-card"><a href="manuscript-id.md">Bahasa Indonesia</a><div class="lang-code">id</div></div>
-                <div class="lang-card"><a href="manuscript-ko.md">한국어</a><div class="lang-code">ko</div></div>
-                <div class="lang-card"><a href="manuscript-es.md">Español</a><div class="lang-code">es</div></div>
-                <div class="lang-card"><a href="manuscript-pt.md">Português</a><div class="lang-code">pt</div></div>
-                <div class="lang-card"><a href="manuscript-it.md">Italiano</a><div class="lang-code">it</div></div>
-                <div class="lang-card"><a href="manuscript-hi.md">हिन्दी</a><div class="lang-code">hi</div></div>
-                <div class="lang-card"><a href="manuscript-ar.md">العربية</a><div class="lang-code">ar</div></div>
-                <div class="lang-card"><a href="manuscript-fa.md">فارسی</a><div class="lang-code">fa</div></div>
-                <div class="lang-card"><a href="manuscript-ru.md">Русский</a><div class="lang-code">ru</div></div>
-                <div class="lang-card"><a href="manuscript-wo.md">Wolof</a><div class="lang-code">wo</div></div>
-                <div class="lang-card"><a href="manuscript-sw.md">Kiswahili</a><div class="lang-code">sw</div></div>
-            </div>
-        </section>
-
-        <footer>
-            <p>© 2027 Dylan (Dylan from 2045) · Free forever · Share it, translate it, record it, give it away.</p>
-        </footer>
-    </div>
+<main class="container">
+<section class="hero">
+<div class="hero-copy">
+<p class="eyebrow">🎧 A ONE-HOUR SCIENCE-FICTION AUDIOBOOK</p>
+<h1>The AI Future of 2027</h1>
+<p class="lede">An exciting, one-hour science-fiction story to listen to — a near future that arrives faster than anyone expects, told in a single thrilling sitting.</p>
+<p class="meta">By Dylan (Dylan from 2045) · About 1 hour of listening · Free forever</p>
+<div class="chips"><span>🎧 Listen</span><span>⏱ About 1 hour</span><span>🚀 Science fiction</span><span>🌍 Many languages</span><span>Free forever</span></div>
+<div class="cta"><a class="btn-primary" href="#languages">Listen in your language</a><a class="btn-secondary" href="#about">About the story</a></div>
+</div>
+<div class="cover-wrap">
+<div class="cover"><img src="cover.png" alt="The AI Future of 2027 audiobook cover: a man in a blue circuit-pattern blazer in front of a green neon ring"></div>
+<p class="cover-caption">The AI Future of 2027</p>
+</div>
+</section>
+<section class="about" id="about">
+<h2>About This Audiobook</h2>
+<p>How automation rushes in quickly through bots and voice-enabled AI assistants that replace humans at banks, trading desks, and in customer service. Nobody sees it coming, and then it sneaks up on everyone.</p>
+<p>It is made to be heard: a fast, vivid story you can finish in a single sitting, and one that stays with you long after the final minute.</p>
+<p class="free">This audiobook is free. Share it. Translate it. Record it. Give it away. The future belongs to everyone.</p>
+</section>
+<section id="languages">
+<h2>Listen in your language</h2>
+<p class="section-intro">Choose the audiobook edition in your language below. New audio editions will be added here as they are produced.</p>
+<div class="lang-grid">
+<a class="lang-card" href="manuscript-en.md"><span class="lang-name">English</span><span class="flag" aria-label="United States flag">🇺🇸</span><span class="lang-code">en · Audiobook edition</span></a>
+<a class="lang-card" href="manuscript-ja.md"><span class="lang-name">日本語</span><span class="flag" aria-label="Japan flag">🇯🇵</span><span class="lang-code">ja · Audiobook edition</span></a>
+<a class="lang-card" href="manuscript-zh.md"><span class="lang-name">中文 (Mandarin)</span><span class="flag" aria-label="China flag">🇨🇳</span><span class="lang-code">zh · Audiobook edition</span></a>
+<a class="lang-card" href="manuscript-id.md"><span class="lang-name">Bahasa Indonesia</span><span class="flag" aria-label="Indonesia flag">🇮🇩</span><span class="lang-code">id · Audiobook edition</span></a>
+<a class="lang-card" href="manuscript-ko.md"><span class="lang-name">한국어</span><span class="flag" aria-label="South Korea flag">🇰🇷</span><span class="lang-code">ko · Audiobook edition</span></a>
+<a class="lang-card" href="manuscript-es.md"><span class="lang-name">Español</span><span class="flag" aria-label="Spain flag">🇪🇸</span><span class="lang-code">es · Audiobook edition</span></a>
+<a class="lang-card" href="manuscript-pt.md"><span class="lang-name">Português</span><span class="flag" aria-label="Portugal flag">🇵🇹</span><span class="lang-code">pt · Audiobook edition</span></a>
+<a class="lang-card" href="manuscript-it.md"><span class="lang-name">Italiano</span><span class="flag" aria-label="Italy flag">🇮🇹</span><span class="lang-code">it · Audiobook edition</span></a>
+<a class="lang-card" href="manuscript-hi.md"><span class="lang-name">हिन्दी</span><span class="flag" aria-label="India flag">🇮🇳</span><span class="lang-code">hi · Audiobook edition</span></a>
+<a class="lang-card" href="manuscript-ar.md"><span class="lang-name">العربية</span><span class="flag" aria-label="Saudi Arabia flag">🇸🇦</span><span class="lang-code">ar · Audiobook edition</span></a>
+<a class="lang-card" href="manuscript-fa.md"><span class="lang-name">فارسی</span><span class="flag" aria-label="Iran flag">🇮🇷</span><span class="lang-code">fa · Audiobook edition</span></a>
+<a class="lang-card" href="manuscript-ru.md"><span class="lang-name">Русский</span><span class="flag" aria-label="Russia flag">🇷🇺</span><span class="lang-code">ru · Audiobook edition</span></a>
+<a class="lang-card" href="manuscript-wo.md"><span class="lang-name">Wolof</span><span class="flag" aria-label="Senegal flag">🇸🇳</span><span class="lang-code">wo · Audiobook edition</span></a>
+<a class="lang-card" href="manuscript-sw.md"><span class="lang-name">Kiswahili</span><span class="flag" aria-label="Kenya flag">🇰🇪</span><span class="lang-code">sw · Audiobook edition</span></a>
+</div>
+</section>
+<footer>
+<p>© 2027 Dylan (Dylan from 2045) · Free forever · Share it, translate it, record it, give it away.</p>
+</footer>
+</main>
 </body>
 </html>
